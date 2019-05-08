@@ -1,0 +1,16 @@
+[Unit]
+Description=Reply service for my bot
+After=network.target
+
+[Service]
+Type=simple
+User=bots
+WorkingDirectory=/path/to/bot
+ExecStart=/usr/bin/python3 /path/to/bot/reply.py
+TimeoutSec=3600
+Restart=always
+RestartSec=30
+StartLimitBurst=3
+
+[Install]
+WantedBy=multi-user.target

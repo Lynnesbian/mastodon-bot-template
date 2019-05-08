@@ -20,6 +20,9 @@ You're now ready to start editing the bot template.
 ## Configuration
 You'll want to edit `meta.json` to set your bot's name, source code page, and administrator. You'll also want to take a look at `login.py`, which defines which instance your bot logs in to, `reply.py`, which handles replying to mentions, and `post.py`, which handles one-off posts. Note that it's mandatory to provide a link to the source code, as this code is licensed under the GNU Affero General Public License v3. You'll also need to link back to [this repository](https://github.com/Lynnesbian/mastodon-bot-template).
 
+## Listening for replies with a systemd service
+You can fill in the provided `systemd-example.service` and move it into an appropriate direcoty (e.g. `/etc/systemd/system`) to manage replies with systemd. You can do the same with SysVInit, initrc, launchd, etc., but no template is ([currently](https://github.com/Lynnesbian/mastodon-bot-template/pulls)) provided.
+
 ## About
 mastodon-bot-template is created and managed by [Lynnesbian](https://fedi.lynnesbian.space/@Lynnear_Software).
 
