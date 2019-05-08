@@ -72,7 +72,6 @@ if "secret" not in cfg:
 
 json.dump(cfg, open("config.json", "w+"))
 
-
 # test login information
 client = Mastodon(
 	client_id=cfg['client']['id'],
