@@ -19,3 +19,9 @@ You're now ready to start editing the bot template.
 
 ## Configuration
 You'll want to edit `meta.json` to set your bot's name, source code page, and administrator. You'll also want to take a look at `login.py`, which defines which instance your bot logs in to, `reply.py`, which handles replying to mentions, and `post.py`, which handles one-off posts. Note that it's mandatory to provide a link to the source code, as this code is licensed under the GNU Affero General Public License v3. You'll also need to link back to [this repository](https://github.com/Lynnesbian/mastodon-bot-template).
+
+## About
+mastodon-bot-template is created and managed by [Lynnesbian](https://fedi.lynnesbian.space/@Lynnear_Software).
+
+### Donations
+You can donate once with [PayPal](https://paypal.me/lynnesbian) or [Ko-fi](https://ko-fi.com/lynnesbian), or you can set up a monthly donation (with perks!) at [Patreon](https://patreon.com/lynnesbian).
