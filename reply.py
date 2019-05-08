@@ -103,8 +103,10 @@ def process_mention(client, notification):
 	# if something goes wrong, you should call the error function, and then return.
 	# this lets the person who mentioned the bot know that something has failed.
 	# for example:
-	# error("Something terrible has happened!!", acct, post_id, visibility)
-	# return
+	catastrophic_error = False
+	if catastrophic_error:
+		error("Something terrible has happened!!", acct, post_id, visibility)
+		return
 
 	# finally, send the post!
 	client.status_post(
