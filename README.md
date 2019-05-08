@@ -1,2 +1,2 @@
 # fediverse-bot-template
-A template for Fediverse (Mastodon, Pleroma, etc.) bots
+A bot template for Mastodon API compatible servers
