@@ -31,4 +31,4 @@ client = Mastodon(
 	api_base_url=cfg['site'])
 
 # make a post!
-client.status_post("Hi! Your random number is: {}".format(random.randint(0,10000))
+client.status_post("Hi! Your random number is: {}".format(random.randint(0,10000)))
