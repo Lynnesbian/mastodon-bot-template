@@ -105,13 +105,13 @@ def process_mention(client, notification):
 	# for example:
 	catastrophic_error = False
 	if catastrophic_error:
-		error("Something terrible has happened!!", acct, post_id, visibility)
+		error("Something terrible has happened!!", acct, post['id'], visibility)
 		return
 
 	# finally, send the post!
 	client.status_post(
 		status = toot, # the toot you'd like to send
-		in_reply_to_id = post_id, # the post you're replying to
+		in_reply_to_id = post['id'], # the post you're replying to
 		visibility=visibility # whether the toot is public/unlisted/etc
 	)
 
