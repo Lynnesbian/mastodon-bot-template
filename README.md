@@ -20,13 +20,17 @@ You're now ready to start editing the bot template.
 ## Configuration
 You'll want to edit `meta.json` to set your bot's name, source code page, and administrator. You'll also want to take a look at `login.py`, which defines which instance your bot logs in to, `reply.py`, which handles replying to mentions, and `post.py`, which handles one-off posts. Note that it's mandatory to provide a link to the source code, as this code is licensed under the GNU Affero General Public License v3. You'll also need to link back to [this repository](https://github.com/Lynnesbian/mastodon-bot-template).
 
-Finally, run `login.py` by typing `python3 login.py`, and answer the questions given. You're ready to go!
+Finally, run `login.py` by typing `python3 login.py`, and answer the questions given. You're ready to go! Try running `python3 post.py` to create your first post.
 
-## Listening for replies with a systemd service
-You can fill in the provided `systemd-example.service` and move it into an appropriate direcoty (e.g. `/etc/systemd/system`) to manage replies with systemd. You can do the same with SysVInit, initrc, launchd, etc., but no template is ([currently](https://github.com/Lynnesbian/mastodon-bot-template/pulls)) provided.
+When you upload your source code, **make sure you don't upload the `config.json` file**. This file contains your bot credentials, and if you upload them, someone else can use them to post from your bot's account!!
+
+## Listening for Replies
+If you're using systemd, you can fill in the provided `systemd-example.service` and move it into an appropriate direcoty (e.g. `/etc/systemd/system`) to manage replies with systemd. You can do the same with SysVInit, initrc, launchd, etc., but no template is ([currently](https://github.com/Lynnesbian/mastodon-bot-template/pulls)) provided.
+
+You can also listen for replies manually. This is done by running `python3 reply.py`.
 
 ## About
-mastodon-bot-template is created and managed by [Lynnesbian](https://fedi.lynnesbian.space/@Lynnear_Software).
+mastodon-bot-template is created and managed by [Lynnesbian](https://fedi.lynnesbian.space/@Lynnear_Software). Some code used was originally from [mstdn-ebooks](https://github.com/Lynnesbian/mstdn-ebooks), and many of my other Fediverse bots (e.g. [OCRbot](https://github.com/Lynnesbian/OCRbot)) use similar code.
 
 ### Donations
 You can donate once with [PayPal](https://paypal.me/lynnesbian) or [Ko-fi](https://ko-fi.com/lynnesbian), or you can set up a monthly donation (with perks!) at [Patreon](https://patreon.com/lynnesbian).
