@@ -31,4 +31,5 @@ client = Mastodon(
 	api_base_url=cfg['site'])
 
 # make a post!
+# if you delete this line, you can also remove the random module from the imports list.
 client.status_post("Hi! Your random number is: {}".format(random.randint(0,10000)))
