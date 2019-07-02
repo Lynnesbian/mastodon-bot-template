@@ -46,7 +46,7 @@ except:
 	raise
 
 if "client" not in cfg:
-	print("No application info -- registering {}} with {}".format(meta['bot_name'], cfg['site']))
+	print("No application info -- registering {} with {}".format(meta['bot_name'], cfg['site']))
 	client_id, client_secret = Mastodon.create_app(meta['bot_name'],
 		api_base_url=cfg['site'],
 		scopes=scopes,
