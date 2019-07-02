@@ -54,7 +54,7 @@ def extract_toot(toot):
 	for ht in soup.select("a.hashtag"): #make hashtags no longer links, just text
 		ht.unwrap()
 
-	for link in soup.select("a"): #ocnvert <a href='https://example.com>example.com</a> to just https://example.com
+	for link in soup.select("a"): #convert <a href='https://example.com>example.com</a> to just https://example.com
 		link.insert_after(link["href"])
 		link.decompose()
 
@@ -98,7 +98,7 @@ def process_mention(client, notification):
 	toot = toot.replace("@", "@\u200B")
 
 	# finally, add the handle of the person who mentioned your bot and caused it to reply.
-	toot = acct + toot # prepend the @
+	toot = acct + " " + toot # prepend the @
 
 	# if something goes wrong, you should call the error function, and then return.
 	# this lets the person who mentioned the bot know that something has failed.
