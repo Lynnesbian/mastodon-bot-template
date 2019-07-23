@@ -19,7 +19,7 @@ import json, random
 try:
 	cfg = json.load(open('config.json', 'r'))
 except:
-	print("Couldn't load config.json. Make sure you run main.py first!\n-----")
+	print("Couldn't load config.json. Make sure you run login.py first!\n-----")
 	raise
 meta = json.load(open('meta.json', 'r'))
 
